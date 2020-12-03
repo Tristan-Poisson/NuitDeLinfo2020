@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  server:
+    image: gradle:6.7-jdk11
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./server:/build
+    command: gradle bootRun
+    working_dir: /build
