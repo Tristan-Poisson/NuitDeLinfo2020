@@ -4,6 +4,7 @@ services:
     image: gradle:6.7-jdk11
     ports:
       - "8080:8080"
+      - "80:80"
     volumes:
       - ./server:/build
     command: gradle bootRun
