@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class Controller(val surferFormRepository: SurferFormRepository) {
-    @GetMapping("/")
-    fun home() = "Hello world!"
+    // @GetMapping("/")
+    // fun home() = "Hello world!"
 
     @GetMapping("/form", produces = ["application/json"])
     fun getForms() =
