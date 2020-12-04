@@ -1,6 +1,6 @@
 #!/bin/sh
 
 npm ci
-npm build
+npm run build
 cd server
 gradle bootRun
