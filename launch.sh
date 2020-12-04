@@ -3,4 +3,5 @@
 npm ci
 npm run build
 cd server
-gradle bootRun
+sudo gradle wrapper --gradle-version 6.7
+sudo ./gradlew bootRun
